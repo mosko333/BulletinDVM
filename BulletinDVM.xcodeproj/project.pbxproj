@@ -11,6 +11,7 @@
 		7EFF0E8E20CED301001531A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EFF0E8C20CED301001531A2 /* Main.storyboard */; };
 		7EFF0E9020CED302001531A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EFF0E8F20CED302001531A2 /* Assets.xcassets */; };
 		7EFF0E9320CED302001531A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EFF0E9120CED302001531A2 /* LaunchScreen.storyboard */; };
+		7EFF0EA220CED5D2001531A2 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EFF0EA120CED5D2001531A2 /* CloudKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,8 @@
 		7EFF0E8F20CED302001531A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7EFF0E9220CED302001531A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7EFF0E9420CED302001531A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EFF0E9F20CED5B4001531A2 /* BulletinDVM.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BulletinDVM.entitlements; sourceTree = "<group>"; };
+		7EFF0EA120CED5D2001531A2 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +30,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EFF0EA220CED5D2001531A2 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7E30794720CED8F300990BBA /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				7EFF0E8C20CED301001531A2 /* Main.storyboard */,
+				7EFF0E9120CED302001531A2 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
 		7EFF0E7C20CED301001531A2 = {
 			isa = PBXGroup;
 			children = (
 				7EFF0E8720CED301001531A2 /* BulletinDVM */,
 				7EFF0E8620CED301001531A2 /* Products */,
+				7EFF0EA020CED5D2001531A2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,6 +66,7 @@
 		7EFF0E8720CED301001531A2 /* BulletinDVM */ = {
 			isa = PBXGroup;
 			children = (
+				7EFF0E9F20CED5B4001531A2 /* BulletinDVM.entitlements */,
 				7EFF0E9E20CED346001531A2 /* View */,
 				7EFF0E9D20CED33D001531A2 /* ViewController */,
 				7EFF0E9C20CED32F001531A2 /* ModelController */,
@@ -64,10 +79,9 @@
 		7EFF0E9A20CED31C001531A2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				7E30794720CED8F300990BBA /* Storyboard */,
 				7EFF0E8820CED301001531A2 /* AppDelegate.swift */,
-				7EFF0E8C20CED301001531A2 /* Main.storyboard */,
 				7EFF0E8F20CED302001531A2 /* Assets.xcassets */,
-				7EFF0E9120CED302001531A2 /* LaunchScreen.storyboard */,
 				7EFF0E9420CED302001531A2 /* Info.plist */,
 			);
 			path = Resources;
@@ -99,6 +113,14 @@
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		7EFF0EA020CED5D2001531A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7EFF0EA120CED5D2001531A2 /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,6 +155,14 @@
 				TargetAttributes = {
 					7EFF0E8420CED301001531A2 = {
 						CreatedOnToolsVersion = 9.4;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -316,6 +346,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BulletinDVM/BulletinDVM.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DBM67E5D74;
 				INFOPLIST_FILE = "$(SRCROOT)/BulletinDVM/Resources/Info.plist";
@@ -334,6 +365,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BulletinDVM/BulletinDVM.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DBM67E5D74;
 				INFOPLIST_FILE = "$(SRCROOT)/BulletinDVM/Resources/Info.plist";
