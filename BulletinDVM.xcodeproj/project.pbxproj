@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		7EFF0E8920CED301001531A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF0E8820CED301001531A2 /* AppDelegate.swift */; };
-		7EFF0E8B20CED301001531A2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF0E8A20CED301001531A2 /* ViewController.swift */; };
 		7EFF0E8E20CED301001531A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EFF0E8C20CED301001531A2 /* Main.storyboard */; };
 		7EFF0E9020CED302001531A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EFF0E8F20CED302001531A2 /* Assets.xcassets */; };
 		7EFF0E9320CED302001531A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EFF0E9120CED302001531A2 /* LaunchScreen.storyboard */; };
@@ -17,7 +16,6 @@
 /* Begin PBXFileReference section */
 		7EFF0E8520CED301001531A2 /* BulletinDVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BulletinDVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EFF0E8820CED301001531A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7EFF0E8A20CED301001531A2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7EFF0E8D20CED301001531A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7EFF0E8F20CED302001531A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7EFF0E9220CED302001531A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,14 +52,53 @@
 		7EFF0E8720CED301001531A2 /* BulletinDVM */ = {
 			isa = PBXGroup;
 			children = (
+				7EFF0E9E20CED346001531A2 /* View */,
+				7EFF0E9D20CED33D001531A2 /* ViewController */,
+				7EFF0E9C20CED32F001531A2 /* ModelController */,
+				7EFF0E9B20CED327001531A2 /* Model */,
+				7EFF0E9A20CED31C001531A2 /* Resources */,
+			);
+			path = BulletinDVM;
+			sourceTree = "<group>";
+		};
+		7EFF0E9A20CED31C001531A2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				7EFF0E8820CED301001531A2 /* AppDelegate.swift */,
-				7EFF0E8A20CED301001531A2 /* ViewController.swift */,
 				7EFF0E8C20CED301001531A2 /* Main.storyboard */,
 				7EFF0E8F20CED302001531A2 /* Assets.xcassets */,
 				7EFF0E9120CED302001531A2 /* LaunchScreen.storyboard */,
 				7EFF0E9420CED302001531A2 /* Info.plist */,
 			);
-			path = BulletinDVM;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7EFF0E9B20CED327001531A2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7EFF0E9C20CED32F001531A2 /* ModelController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ModelController;
+			sourceTree = "<group>";
+		};
+		7EFF0E9D20CED33D001531A2 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		7EFF0E9E20CED346001531A2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +172,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7EFF0E8B20CED301001531A2 /* ViewController.swift in Sources */,
 				7EFF0E8920CED301001531A2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,7 +318,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DBM67E5D74;
-				INFOPLIST_FILE = BulletinDVM/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/BulletinDVM/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +336,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DBM67E5D74;
-				INFOPLIST_FILE = BulletinDVM/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/BulletinDVM/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
