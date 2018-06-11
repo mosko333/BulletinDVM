@@ -10,6 +10,7 @@
 		7ECD0A0B20CEDBA000735C28 /* Bulletin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ECD0A0A20CEDBA000735C28 /* Bulletin.swift */; };
 		7ECD0A0D20CEE6CB00735C28 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ECD0A0C20CEE6CB00735C28 /* Constants.swift */; };
 		7ECD0A0F20CEE86C00735C28 /* BullietinController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ECD0A0E20CEE86C00735C28 /* BullietinController.swift */; };
+		7ECD0A1120CF0A4800735C28 /* BulettinTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ECD0A1020CF0A4800735C28 /* BulettinTableViewController.swift */; };
 		7EFF0E8920CED301001531A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF0E8820CED301001531A2 /* AppDelegate.swift */; };
 		7EFF0E8E20CED301001531A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EFF0E8C20CED301001531A2 /* Main.storyboard */; };
 		7EFF0E9020CED302001531A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EFF0E8F20CED302001531A2 /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 		7ECD0A0A20CEDBA000735C28 /* Bulletin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bulletin.swift; sourceTree = "<group>"; };
 		7ECD0A0C20CEE6CB00735C28 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		7ECD0A0E20CEE86C00735C28 /* BullietinController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BullietinController.swift; sourceTree = "<group>"; };
+		7ECD0A1020CF0A4800735C28 /* BulettinTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulettinTableViewController.swift; sourceTree = "<group>"; };
 		7EFF0E8520CED301001531A2 /* BulletinDVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BulletinDVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EFF0E8820CED301001531A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7EFF0E8D20CED301001531A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 		7EFF0E9D20CED33D001531A2 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				7ECD0A1020CF0A4800735C28 /* BulettinTableViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7ECD0A1120CF0A4800735C28 /* BulettinTableViewController.swift in Sources */,
 				7ECD0A0F20CEE86C00735C28 /* BullietinController.swift in Sources */,
 				7ECD0A0B20CEDBA000735C28 /* Bulletin.swift in Sources */,
 				7EFF0E8920CED301001531A2 /* AppDelegate.swift in Sources */,
