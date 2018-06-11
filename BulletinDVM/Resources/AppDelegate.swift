@@ -15,7 +15,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+       
+//        BulletinController.shared.createBulletin(with: "Test bulletin 1") { (success) in
+//            if success {
+//                print("success")
+//            } else {
+//                print("fail")
+//            }
+//        }
+        
         return true
     }
 
